@@ -131,6 +131,7 @@ body {
   padding: 0.5rem 0.75rem;
   letter-spacing: var(--mainSpacing);
   font-weight: bold;
+  font-size: 18px;
   transition: var(--mainTransition);
   transform: translateX(101%);
   cursor: pointer;
@@ -138,9 +139,15 @@ body {
 .bag-btn:hover {
   color: var(--mainWhite);
 }
-.fa-shopping-cart {
+.shopping-cart {
   margin-right: 0.5rem;
 }
+
+.text {
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+}
+
 .img-container:hover .bag-btn {
   transform: translateX(0);
 }

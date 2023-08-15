@@ -188,7 +188,7 @@ body {
   transition: var(--mainTransition);
   background: rgb(240, 157, 81, 0.5);
   z-index: 2;
-  visibility: hidden; /* make Right side Cart hide*/
+  visibility: hidden; /* make cart-overlay hide*/
 }
 .cart {
   position: fixed;
@@ -211,10 +211,10 @@ body {
 }
 
 .showCart {
-  transform: translateX(0);
+  transform: translateX(0); /*show right side Cart*/
 }
 .transparentBcg {
-  visibility: visible;
+  visibility: visible; /* show cart-overlay*/
 }
 @media screen and (min-width: 768px) {
   .cart {

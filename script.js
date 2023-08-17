@@ -256,19 +256,21 @@ class Storage {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // When the DOM content is loaded, execute the following code.
   const ui = new UI();
   const products = new Products();
-  // setup app
+  // Initialize the application by setting up the UI and loading products.
   ui.setupApp();
-  // get all products
+
+  // Fetch and display products, then set up cart buttons and cart logic.
   products
     .getProducts()
     .then((products) => {
       ui.displayProducts(products); // display all products
-      Storage.saveProducts(products);
+      Storage.saveProducts(products); // Save products to local storage.
     })
     .then(() => {
-      ui.getBagButtons();
-      ui.cartLogic();
+      ui.getBagButtons(); // Set up cart buttons
+      ui.cartLogic(); // Set up cart interaction logic.
     });
 });

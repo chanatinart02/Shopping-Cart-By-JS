@@ -34,6 +34,31 @@ class Products {
   }
 }
 
+// getting the products by contentful
+// const client = contentful.createClient({
+//   space: "roft8yqt0elk",
+//   accessToken: "rG2CyYBO__3s0BB57J-64BUhGcQoiC_nDojvYmVx3Sk",
+// });
+// class Products {
+//   async getProducts() {
+//     try {
+//       const contentful = await client.getEntries({
+//         content_type: "comfyHouse",
+//       });
+//       console.log(contentful);
+//       let products = contentful.items;
+//       return products.map((item) => {
+//         const { id } = item.sys;
+//         const { title, price } = item.fields;
+//         const image = item.fields.image.fields.file.url;
+//         return { id, title, price, image };
+//       });
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   }
+// }
+
 // display products
 class UI {
   displayProducts(products) {
